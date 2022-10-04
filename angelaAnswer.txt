@@ -1,0 +1,210 @@
+1) link css to HTML
+2) create a single line js 
+ <body onload="alert('HI');">
+3) create a multiline js along with type
+<script>
+      alert('Hi');
+    </script>
+
+4) link js externally
+
+<script src="index.js"></script>
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <script src="index.js"></script>
+  </body>
+</html>
+</DOCTYPE>
+
+
+
+
+5) create a basic HTML setup with h1 li forms button
+so on
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <h1 id="title" class="main-title">
+      This is a title;
+    </h1>
+
+    <div id="contains-li" class="li-division">
+      <ul>
+        <li>mango</li>
+        <li>banana</li>
+        <li>pineApple</li>
+      </ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+</DOCTYPE>
+
+
+
+
+
+
+6) now change the text of html using various methods
+
+
+
+
+document.getElementById('title').innerHTML = "I changed using JS";
+
+
+
+
+7) way to find out the parent of all element
+console.log(document);
+
+8) get the first child
+document.firstElementChild
+
+9) get the last child
+document.lastElementChild
+
+
+
+10) get any element in lowerTree
+document.firstElementChild.firstElementChild
+
+
+
+
+
+11) create a variable to hold the value
+var heading = document.firstElementChild.firstElementChild
+12) change the inner html of the selected Var
+heading.innerHTML = "golu";
+
+13) now change the css property color of the var
+text.style.color = "red";
+14) now use query selector and grab the input
+document.querySelector('#title').innerHTML
+
+15) now select the elements by tagName
+document.getElementsByTagName('li')[1]
+
+16) now print the length of the tagName
+document.getElementsByTagName('li').length
+17) get elements by class Name
+document.getElementsByClassName('.main-title')
+
+18) get elements by Id
+only for querySelector we need to add #
+document.getElementById('title')
+19) use the hierarchical way to access the class and id
+document.querySelector('li a')
+
+
+20) get the classList
+document.querySelector('#title').classList
+
+
+21) and new class
+document.querySelector('#title').classList.add('invisible')
+in css 
+.invisible{
+	visibility : hidden;
+}
+
+22) Then use the style.css to remove css
+23) use remove and toggle to play with the created tag
+document.querySelector('#title').classList.toggle('invisible');
+
+
+24) change the content of the file
+document.querySelector('#title').textContent = "gogeta"
+
+25) use the innerHTML and use the html tags
+document.querySelector('#title').innerHTML = "<em>gogeta</em>"
+26) get attributes
+
+document.querySelector('li').attributes
+
+document.querySelector('a').getAttributes("href")
+27) set attributes
+document.querySelector('li').setAttributes("href", "https://www.google.com")
+28) select a btn and create a function so tht it alerts hi
+29) use name function, arrow function and anonymous functions
+document.querySelector('button').addEventListener('click', handleClick);
+function handleClick(){
+  alert('hi');
+}
+
+document.querySelector('button').addEventListener('click', function (){
+  alert('hi');
+});
+
+document.querySelector('button').addEventListener('click', ()=>{
+  alert('hi');
+});
+
+30) create a random numbers in console
+Math.floor(Math.random() * 6) + 1;
+31) create 3 functions for a calculator and use the operator stuffs so tht it uses a call back function
+function add(n1, n2){
+  return n1+n2;
+}
+function multiply(n1 , n2){
+  return n1*n2;
+}
+function operator(n1, n2, symbol){
+  return symbol(n1, n2)
+}
+
+
+32) create an object and a method. Then point stuffs
+
+const shaam = {
+  name: 'shaam',
+  age : 20,
+  greeting(){
+    return this.name;
+  }
+
+33) use a constructor function initialize and call stuffs
+
+function BellBoy(name, age){
+  this.name = name;
+  this.age = age;
+}
+var bb1 = new BellBoy('shaam', 20)
+
+
+34) use a function on to the constructor and jst log it
+function BellBoy(name, age, suitcase){
+  this.name = name;
+  this.age = age;
+  this.suitcase = function(){
+    alert('HI');
+  }
+}
+var bb1 = new BellBoy('shaam', 20)
+
+
+35) add eventListener to event.key to grab the key pressed
+document.addEventListener('keypress', function(event){
+  console.log(event.key);
+})
+
+
+36) use setTimeOut if possible
+practice this in tht tamil guy Video
+setTimeOut(function(){
+activeButton.remove("pressed"),100)
