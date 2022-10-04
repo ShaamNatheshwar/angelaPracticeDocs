@@ -1,0 +1,40 @@
+1) link css to HTML
+2) create a single line js 
+3) create a multiline js along with type
+4) link js externally
+
+
+5) create a basic HTML setup with h1 li forms button
+so on
+6) now change the text of html using various methods
+
+7) way to find out the parent of all element
+8) get the first child
+9) get the last child
+10) get any element in lowerTree
+11) create a variable to hold the value
+12) change the inner html of the selected Var
+13) now change the css property color of the var
+14) now use query selector and grab the input
+15) now select the elements by tagName
+16) now print the length of the tagName
+17) get elements by class Name
+18) get elements by Id
+19) use the hierarchical way to access the class and id
+20) get the classList
+21) and new class
+22) Then use the style.css to remove css
+23) use remove and toggle to play with the created tag
+24) change the content of the file
+25) use the innerHTML and use the html tags
+26) get attributes
+27) set attributes
+28) select a btn and create a function so tht it alerts hi
+29) use name function, arrow function and anonymous functions
+30) create a random numbers in console
+31) create 3 functions for a calculator and use the operator stuffs so tht it uses a call back function
+32) create an object and a method. Then point stuffs
+33) use a constructor function initialize and call stuffs
+34) use a function on to the constructor and jst log it
+35) add eventListener to event.key to grab the key pressed
+36) use setTimeOut if possible
